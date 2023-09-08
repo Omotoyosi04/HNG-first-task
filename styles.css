@@ -1,0 +1,356 @@
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:lato;
+    src: url(font/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #B79CED;
+    border-radius: 8px;
+    width: 5px;
+    
+}
+* {
+    padding: 3px;
+    margin: 0;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: lato;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+}
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+}
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+nav div p {
+    font-size: 12px;
+    display: inline-block;
+    line-height: 35px;
+    margin-right: 10px;
+}
+nav div {
+    flex-grow: 3;
+}
+nav ol li{
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a {
+    font-family: lato;
+    font-size: 12px;
+    color: #AA24D9;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .6s ease-in-out;
+}
+nav button {
+    font-size: 8px;
+    border-radius: 5px;
+    background-color: #AA24D9;
+    border: 0;
+    padding: 6px 10px;
+    transition:0.8s
+}
+nav a:hover {
+    color: #B79CED;
+    letter-spacing: 4px;
+    transition: .6s ease-in-out;
+}
+nav button:hover {
+    font-size: 8px;
+    border-radius: 5px;
+    background-color:#B79CED;
+    border: 0;
+    padding: 6px 10px;
+    transition: 0.8s;
+}
+nav button a:hover {
+    letter-spacing: normal;
+    color: #fff;
+}
+nav button a {
+    color: #fff;
+}
+.pfp {
+    background-color: #AA24D9;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: poppins;
+    font-size: 18px;
+}
+.jades {
+    font-family: lato;
+    font-weight: 700;
+}
+section {
+    padding-top: 85px;
+    width: fit-content;
+}
+#home {
+    height: 100vh;
+    background-image: url(images/Mesh\ gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-row-gap: 70px;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+}
+#home h1 {
+    font-size: 50px;
+    font-family: 700;
+    text-align: left;
+}
+#home p {
+    font-family: lato;
+    font-size: 16px;
+    font-weight: 400;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.pfp-background{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    margin-left: -80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 90px/120px;
+    padding-right: 100px;
+    width: 400px;
+    height: 500px;
+}
+#home .profile {
+    margin-top: 50px;
+    height: 450px;
+    width: 500px;
+}
+#home div {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 20px 10px;
+    grid-template-rows: repeat(2,50px);
+}
+#home div figcaption {
+    background-color: #AA24D9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+#home .pfp-logo{
+    height: 40px;
+    width: 40px;
+}
+#home figcaption a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: lato;
+}
+#home .view-pfp {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    width:135px;
+    text-decoration: none;
+    font-family: lato;
+}
+.view-pfp::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    display: block;
+    transition: .5s ease-in-out;
+}
+.view-pfp:hover::after {
+    content: "";
+    height: 2px;
+    width: 14%;
+    background-color: #fff;
+    display: block;
+}
+#about main {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    text-align: justify;
+    align-items: center;
+    line-height: 23px;
+    font-family: poppins;
+    font-size: 16px;
+}
+#resume {
+    margin: auto;
+}
+#resume main {
+    background: url(images/Mesh\ gradient\ small.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+}
+table {
+    width: 80%;
+    margin: auto;
+    padding: 45px;
+}
+td:nth-child(odd) {
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    justify-content: right;
+}
+td:nth-child(even) {
+    font-family: poppins;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+td {
+    background: transparent;
+    border-collapse: separate;
+    padding: 10px;
+}
+#services{
+    margin: auto;
+}
+#services main {
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    color: #fff;
+}
+.designs {
+    width: 300px;
+    height: 300px;
+    margin: 40px 35px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    background: url(images/Mesh\ gradient\ small.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.designs h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.designs p {
+    font-size: 14px;
+}
+#projects {
+    margin: auto;
+}
+#projects main {
+    background: url(images/Mesh\ gradient.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.view-more {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: lato;
+    color: #fff;
+    width: 100px;
+    text-decoration: none;
+    place-self: flex-end;
+    margin-top: 30px;
+}
+.view-more::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    display: block;
+    transition: .5s ease-in-out;
+}
+.view-more:hover::after {
+    content: "";
+    height: 2px;
+    width: 62%;
+    background-color: #fff;
+    display: block;
+}
+.project-slide {
+    display: flex;
+    justify-content: center;
+}
+.project-slide img {
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+/*
+.project-slide {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-column-gap: 30px;
+    width: 100vw;
+}
+.proj {
+}
+.image1 {
+    width: 100px;
+}
+.image2 {
+    width: 400px;
+}
+*/
+
+
+#contact {
+    margin: auto;
+}
+#contact p {
+    font-size: 16px;
+    width: 75vw;
+    text-align: center;
+    font-family: poppins;
+    margin-top: 40px;
+}
+.contact-icon {
+    margin-left: 400px;
+}
+.contact-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px;
+}
